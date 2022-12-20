@@ -14,14 +14,13 @@ public class Largest {
         System.out.println("Enter third number : ");
         int num3 = input.nextInt();
 
-        if(num1 > num2 && num1 > num3){
-            System.out.println(num1 + " is largest number among : " + "\nFirst number : "+ num1 + "\nSecond number : "+ num2 + "\nThird number : "+ num3);
+        int max = num1;
+        if(num2 > max){
+            max = num2;
         }
-        else if(num2 > num1 && num2 > num3){
-            System.out.println(num2 + " is largest number among : " + "\nFirst number : "+ num1 + "\nSecond number : "+ num2 + "\nThird number : "+ num3);
+        if(num3 > max){
+            max = num3;
         }
-        else{
-            System.out.println(num3 + " is largest number among : " + "\nFirst number : "+ num1 + "\nSecond number : "+ num2 + "\nThird number : "+ num3);
-        }
+        System.out.println("Largest number is : " + max);
     }
 }
